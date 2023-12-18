@@ -2180,3 +2180,9 @@ button{
 .copyright_area_container{
     width: 100%;
 }
+
+/* Dropdown menu color */
+
+.mean-nav li {
+    background-color: #303030;
+}
