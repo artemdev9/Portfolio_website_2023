@@ -1502,7 +1502,7 @@
         padding-bottom: 50px;
     }
     .mobile-menu-area .mean-nav ul {
-        height: 264px;
+        /* height: 264px; */
         overflow-y: auto;
     }
     .htc__shop__cat.htc__shop__cat-none {
