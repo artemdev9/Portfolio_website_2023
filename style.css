@@ -2117,19 +2117,8 @@ blockquote::before {
 
 
 /* Contact */
-
-.contact-box input{
-    font-size: 16px;
-    color: black;
-}
-
-.contact-box textarea{
-    font-size: 16px;
-    color: black;
-}
-
 input::placeholder {
-    font-size: 16px; 
+    font-size: 16px; /* Set your desired font size here */
 }
 
 /* Additional styling for modern browsers */
@@ -2173,3 +2162,7 @@ button{
     font-weight: 500;
 }
 
+.logo img{
+    width: 100px;
+    height: 28px;
+}
