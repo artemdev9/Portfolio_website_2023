@@ -33,6 +33,26 @@
 
     <!-- Modernizr JS -->
     <script src="js/vendor/modernizr-3.11.7.min.js"></script>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+        }
+
+        h2 {
+            color: #333;
+        }
+
+        ul {
+            list-style-type: none;
+        }
+
+        li {
+            margin-bottom: 10px;
+        }
+    </style>
 </head>
 
 <body>
@@ -132,33 +152,211 @@
                                     </div>
                                 </div>
                                 <!--End Blog Thumb -->
-                                <h2>It is a long established fact that a reader will</h2>
+                                <h2>Blockchain-Based Music Platform Development</h2>
                                 <div class="blog-admin-and-comment">
                                     <p>BY : <a href="#">Artem Dumchev</a></p>
-                                    
+
                                 </div>
                                 <!-- Start Blog Pra -->
-                                <div class="blog-details-pra">
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-                                        incididunt ut labore et dolore d aliqua. Ut enim ad minim veniam, quis nostrud
-                                        exercitation ullamco laboris nisi ut aliquip ex ea commodo conse Duis aute irure
-                                        dolor in reprehenderit in voluptate velit esse.</p>
 
-                                    <blockquote>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                                        tempor incididunt ut labore et dolore d aliqua. Ut enim ad minim veniam,
+                                <div class="blog-contents-title" style="text-align: center;">Contents</div>
+                                <div class="blog-contents" style="display: flex; justify-content: space-evenly;">
+                                    <button class="blog-content-item">
+                                        Introduction
+                                    </button>
+                                    <button class="blog-content-item">
+                                        <a href="#week-1">Week 1</a>
+                                    </button>
+                                    <button class="blog-content-item">
+                                        Week 2
+                                    </button>
+                                    <button class="blog-content-item">
+                                        Week 3
+                                    </button>
+                                    <button class="blog-content-item">
+                                        Week 4
+                                    </button>
+                                    <button class="blog-content-item">
+                                        Week 5
+                                    </button>
+                                </div>
+
+                                <div class="blog-details-pra" style="margin-top: 3em; font-size: xx-large;">
+                                    <div class="blog-detials-pra-title" id="week-1" style="margin-bottom: 1em;">Week 1
+                                        Choosing a technology Stack.</div>
+
+                                    <div>
+                                        <h2>The Foundation: Choosing Our Tech Stack</h2>
+                                        <p>In the first week of my journey to build a blockchain-based music platform,
+                                            I've been diving deep into the critical task of choosing the right
+                                            technology stack. It's a decision that feels as foundational as laying down
+                                            the first brick of a house – everything else will be built upon it. So,
+                                            here's how I've been approaching this crucial phase.</p>
+                                    </div>
+
+                                    <div>
+                                        Frontend Decisions
+                                        <p>I've already settled on React JS for the web interface as I have experience
+                                            using it. Its component-based nature is a perfect fit for the dynamic and
+                                            engaging UI I envision. React's vast ecosystem and community support mean
+                                            I'm never too far from finding a solution or a new idea to implement.</p>
+                                    </div>
+
+                                    <div>
+                                        <h2>Mobile App Development Decision</h2>
+                                        <p>Choosing the right framework for the mobile app was a challenging decision –
+                                            <strong>Flutter or React Native? Why
+                                                React Native?</strong>
+                                        </p>
+
+
+                                        <p><strong>Shared Principles:</strong> React Native allows for a shared codebase
+                                            with the web platform, streamlining
+                                            the development process</p>
+                                        <p><strong>Development Speed:</strong> The potential for code reuse with React
+                                            Native is a significant advantage,
+                                            especially with my tight 3-month timeline.</p>
+                                        <p><strong>Cross-Platform Efficiency:</strong> React Native's consistency across
+                                            platforms aligns perfectly with my
+                                            project's goals, despite Flutter's appealing performance and UI
+                                            capabilities.</p>
+
+                                        <p><strong>Previous Experience:</strong> I have used React JS before, which
+                                            shares the same concepts of components, state management, and props that are
+                                            fundamental to building dynamic user interfaces.</p>
+
+
+                                        <p>In conclusion, the decision to go with <strong>React Native</strong> was
+                                            driven by its alignment with our
+                                            project's needs for efficiency, speed, and cross-platform consistency.</p>
+                                    </div>
+
+
+
+                                    <blockquote>
+                                        https://somniosoftware.com/blog/flutter-vs-react-native#:~:text=Wrapping%20up,building%20custom%20UI%20components%20easier
                                     </blockquote>
 
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-                                        incididunt ut labore et dol orea magna aliqua. Ut enim ad minim veniam, quis
-                                        nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                                        Duis aute irure dolor in reprehenderit in voluptate velit</p>
+                                    <p>After deciding that I will use React Native. I comleted a Codecademy Course.</p>
+
+                                    <blockquote>https://www.codecademy.com/learn/learn-react-native</blockquote>
+
+                                    <div>Building the Backend
+
+                                        <h2>1. User Authentication: A Dual Approach</h2>
+                                        <p><strong>Firebase Authentication:</strong> This has been my go-to for managing
+                                            sign-ins via Gmail, thanks to its ease of setup and broad integration with
+                                            various login methods. It provides a quick and secure way to handle user
+                                            authentication.</p>
+                                        <p><strong>Web3 Libraries:</strong> For users interested in the crypto aspects
+                                            of the app, I plan to use libraries like Web3.js and ethers.js to bridge
+                                            their Ethereum wallets with our platform. This integration is vital for
+                                            linking activities like NFT transactions and minting directly to their
+                                            blockchain identity.</p>
+
+                                        <h2>2. Music Streaming and User Engagement</h2>
+                                        <p><strong>Firebase's Firestore:</strong> I'm leveraging Firestore for its
+                                            real-time data handling capabilities, utilizing it to store user data,
+                                            playlists, and song metadata. This ensures our platform remains dynamic and
+                                            responsive.</p>
+                                        <p><strong>Firebase Cloud Storage:</strong> This will act as our music file
+                                            repository, providing the scalability and reliability needed for streaming.
+                                            It's crucial to ensure all hosted music is legally uploaded by its creators
+                                            or those with the rights.</p>
+                                        <p><strong>Custom Backend APIs:</strong> Developed with Node.js and Express.js,
+                                            these APIs will facilitate various user actions like curating playlists and
+                                            marking favorites, bridging our database and user interface seamlessly.</p>
+
+                                        <h2>3. The NFT Marketplace - Where Creativity Meets Commerce</h2>
+                                        <p><strong>Smart Contracts:</strong> Utilizing Solidity, I'm setting up the
+                                            backbone for our NFT transactions, which will handle the minting, sale, and
+                                            transfer processes on the Ethereum blockchain.</p>
+                                        <p><strong>IPFS:</strong> For decentralized storage of the actual music files
+                                            linked to NFTs, IPFS presents a fitting solution that aligns with the
+                                            blockchain's decentralized nature.</p>
+                                        <p><strong>Web3.js and ethers.js Integration:</strong> This integration will
+                                            allow our platform to interact with the smart contracts, enabling
+                                            functionalities from NFT minting to marketplace transactions.</p>
+                                        <p><strong>Marketplace System:</strong> A crucial component of the platform,
+                                            this system will enable users to list, sell, and buy NFTs, fostering a
+                                            community where creative value is acknowledged and rewarded.</p>
+
+                                    </div>
+
+
+                                    <div> Database Deisgn
+
+                                        <h2>1. User Database</h2>
+                                        <p><strong>Purpose:</strong> Stores all user-related data, including
+                                            authentication details, user profiles, preferences,
+                                            and activity logs.</p>
+                                        <p><strong>Contents:</strong> User IDs, email addresses, usernames, profile
+                                            information. References or IDs to favorite songs, owned NFTs. Transaction
+                                            history within the marketplace.</p>
+
+                                        <p><strong>Functionality:</strong> Supports user authentication, profile
+                                            customization, and personalization of the music listening experience.</p>
+
+                                        <h2>2. Songs Database</h2>
+                                        <p><strong>Purpose:</strong> Contains all information about the songs available
+                                            on the platform, including metadata and streaming data.</p>
+
+                                        <p><strong>Contents:</strong>Song IDs, titles, artists, album information,
+                                            genres.File URLs (for streaming), and any associated NFT data.</p>
+
+                                        <p><strong>Functionality:</strong> Facilitates music streaming, browsing, and
+                                            searching within the app.</p>
+
+                                        <h2>3. Marketplace Database</h2>
+                                        <p><strong>Purpose:</strong> Manages all data related to the buying, selling,
+                                            and trading of music NFTs on the platform's built-in marketplace.</p>
+
+                                        <p><strong>Contents:</strong>Listings of NFTs for sale, including references to
+                                            the corresponding song.Ownership records, transaction histories, and pricing
+                                            information.</p>
+
+                                        <p><strong>Functionality:</strong> Enables the marketplace operations, including
+                                            listing NFTs for sale, executing transactions, and tracking ownership
+                                            changes.</p>
+
+                                    </div>
+
+                                    <div> 
+                                        <h2>Note</h2>
+                                        <p>
+                                            It is useful to outline that the NFT will act more in the form of a donation
+                                            rather than a proof of ownership. They will be associated with a track but
+                                            that doesn't mean the person who owns the NFT owns the track. The artist
+                                            retains full ownership of the track and the right to upload the track to any
+                                            other platforms.
+                                        </p>
+                                    </div>
+                                    <div>
+
+                                        <h2>Development Model</h2>
+                                        <p><strong>Approach:</strong> Given the ambitious scope and the tight timeline,
+                                            I've opted for an Agile development model. This iterative process with
+                                            2-week sprints allows for rapid adaptation, effective feature
+                                            prioritization, and the incorporation of feedback at every stage.</p>
+
+                                        <p><strong>Continuous Integration/Continuous Deployment (CI/CD):</strong> This
+                                            will be key in maintaining a steady flow of updates and improvements,
+                                            ensuring that the platform remains dynamic and responsive to user needs and
+                                            technological advancements.</p>
+
+                                        <p><strong>Weekly Focus:</strong> This week has been foundational - selecting
+                                            the tech stack and planning the development approach. Challenges are
+                                            inevitable, but each decision is a step toward a platform that connects us
+                                            with niche music genres and supports artists in continuing to create
+                                            meaningful, culture-reflecting music.</p>
+                                    </div>
+
+
                                 </div>
+
                                 <!-- End Blog Pra -->
                                 <!-- Start Blog Tags -->
                                 <div class="postandshare">
-                                    <div class="post">
-                                        <p>TAGS :</p>
-                                    </div>
                                     <div class="blog-social-icon">
                                         <ul>
                                             <li><a href="#"><i class="fa fa-rss"></i></a></li>
@@ -192,7 +390,7 @@
                                             </div>
                                         </div>
                                         <!-- End Single Comment -->
-                                       
+
                                     </div>
                                 </div>
                                 <!-- End Blog Comment Area -->
