@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Portflow - Minimal Portfolio Template</title>
+    <title>Blog</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -227,55 +227,51 @@
 
                                         <p>Despite <strong>Flutter's</strong> performance advantages and growing
                                             popularity, I've chosen <strong>React Native</strong> for its extensive
-                                            community, familiarlity and a smoother learning curve.</p>
+                                            community, familiarity and a smoother learning curve.</p>
 
                                     </div>
 
-
-
-                                    <blockquote>
-                                        https://somniosoftware.com/blog/flutter-vs-react-native#:~:text=Wrapping%20up,building%20custom%20UI%20components%20easier
-                                    </blockquote>
-
-                                    <p>After deciding that I will use React Native. I comleted a Codecademy Course.</p>
-
-                                    <blockquote>https://www.codecademy.com/learn/learn-react-native</blockquote>
+                                    <p>After deciding that I will use React Native. I completed a Codecademy Course.</p>
 
                                     <div>Building the Backend
 
-                                        <h2>1. User Authentication: A Dual Approach</h2>
+                                        <p>The backend part of the project is what I consider to be the most
+                                            challenging. It will be responsible for complicated tasks such as NFT
+                                            creation and Marketplace operations, uploading and streaming tracks. </p>
+
+                                        <h2>User Authentication: A Dual Approach</h2>
                                         <p><strong>Firebase Authentication:</strong> This has been my go-to for managing
                                             sign-ins via Gmail, thanks to its ease of setup and broad integration with
                                             various login methods. It provides a quick and secure way to handle user
                                             authentication.</p>
-                                        <p><strong>Web3 Libraries:</strong> For users interested in the crypto aspects
+                                        <p><strong>Web3 Libraries:</strong> For users who want access to the crypto part
                                             of the app, I plan to use libraries like Web3.js and ethers.js to bridge
                                             their Ethereum wallets with our platform. This integration is vital for
                                             linking activities like NFT transactions and minting directly to their
-                                            blockchain identity.</p>
+                                            blockchain wallet.</p>
 
-                                        <h2>2. Music Streaming and User Engagement</h2>
+                                        <h2>Music Streaming and User Engagement</h2>
                                         <p><strong>Firebase's Firestore:</strong> I'm leveraging Firestore for its
                                             real-time data handling capabilities, utilizing it to store user data,
-                                            playlists, and song metadata. This ensures our platform remains dynamic and
+                                            playlists, and song metadata. This ensures the platform remains dynamic and
                                             responsive.</p>
-                                        <p><strong>Firebase Cloud Storage:</strong> This will act as our music file
+                                        <p><strong>Firebase Cloud Storage:</strong> This will act as the music file
                                             repository, providing the scalability and reliability needed for streaming.
                                             It's crucial to ensure all hosted music is legally uploaded by its creators
-                                            or those with the rights.</p>
+                                            or those with who have the rights.</p>
                                         <p><strong>Custom Backend APIs:</strong> Developed with Node.js and Express.js,
                                             these APIs will facilitate various user actions like curating playlists and
-                                            marking favorites, bridging our database and user interface seamlessly.</p>
+                                            marking favorites, bridging the database and user interface.</p>
 
-                                        <h2>3. The NFT Marketplace - Where Creativity Meets Commerce</h2>
+                                        <h2>The NFT Marketplace - Creativity Plus Commerce</h2>
                                         <p><strong>Smart Contracts:</strong> Utilizing Solidity, I'm setting up the
-                                            backbone for our NFT transactions, which will handle the minting, sale, and
+                                            base for the NFT transactions, which will handle the minting, sale, and
                                             transfer processes on the Ethereum blockchain.</p>
                                         <p><strong>IPFS:</strong> For decentralized storage of the actual music files
                                             linked to NFTs, IPFS presents a fitting solution that aligns with the
                                             blockchain's decentralized nature.</p>
                                         <p><strong>Web3.js and ethers.js Integration:</strong> This integration will
-                                            allow our platform to interact with the smart contracts, enabling
+                                            allow the platform to interact with the smart contracts, enabling
                                             functionalities from NFT minting to marketplace transactions.</p>
                                         <p><strong>Marketplace System:</strong> A crucial component of the platform,
                                             this system will enable users to list, sell, and buy NFTs, fostering a
@@ -284,9 +280,9 @@
                                     </div>
 
 
-                                    <div> Database Deisgn
+                                    <div> Database Design
 
-                                        <h2>1. User Database</h2>
+                                        <h2>User Database</h2>
                                         <p><strong>Purpose:</strong> Stores all user-related data, including
                                             authentication details, user profiles, preferences,
                                             and activity logs.</p>
@@ -297,21 +293,21 @@
                                         <p><strong>Functionality:</strong> Supports user authentication, profile
                                             customization, and personalization of the music listening experience.</p>
 
-                                        <h2>2. Songs Database</h2>
+                                        <h2>Songs Database</h2>
                                         <p><strong>Purpose:</strong> Contains all information about the songs available
                                             on the platform, including metadata and streaming data.</p>
 
-                                        <p><strong>Contents:</strong>Song IDs, titles, artists, album information,
-                                            genres.File URLs (for streaming), and any associated NFT data.</p>
+                                        <p><strong>Contents:</strong> Song IDs, titles, artists, album information,
+                                            genres. File URLs (for streaming), and any associated NFT data.</p>
 
                                         <p><strong>Functionality:</strong> Facilitates music streaming, browsing, and
                                             searching within the app.</p>
 
-                                        <h2>3. Marketplace Database</h2>
+                                        <h2>Marketplace Database</h2>
                                         <p><strong>Purpose:</strong> Manages all data related to the buying, selling,
                                             and trading of music NFTs on the platform's built-in marketplace.</p>
 
-                                        <p><strong>Contents:</strong>Listings of NFTs for sale, including references to
+                                        <p><strong>Contents:</strong> Listings of NFTs for sale, including references to
                                             the corresponding song.Ownership records, transaction histories, and pricing
                                             information.</p>
 
@@ -339,18 +335,22 @@
                                             2-week sprints allows for rapid adaptation, effective feature
                                             prioritization, and the incorporation of feedback at every stage.</p>
 
-                                        <p><strong>Continuous Integration/Continuous Deployment (CI/CD):</strong> This
-                                            will be key in maintaining a steady flow of updates and improvements,
-                                            ensuring that the platform remains dynamic and responsive to user needs and
-                                            technological advancements.</p>
-
-                                        <p><strong>Weekly Focus:</strong> This week has been foundational - selecting
-                                            the tech stack and planning the development approach. Challenges are
-                                            inevitable, but each decision is a step toward a platform that connects us
-                                            with niche music genres and supports artists in continuing to create
-                                            meaningful, culture-reflecting music.</p>
                                     </div>
 
+
+                                    <p><strong>Weekly Focus:</strong> This week has been foundational - selecting
+                                        the tech stack and planning the development approach. Challenges are
+                                        inevitable, but each decision is a step toward a platform that connects us
+                                        with niche music genres and supports artists in continuing to create
+                                        meaningful, culture-reflecting music.</p>
+
+                                    <p><strong>Useful links:</strong></p>
+
+                                    <blockquote>
+                                        https://somniosoftware.com/blog/flutter-vs-react-native#:~:text=Wrapping%20up,building%20custom%20UI%20components%20easier
+                                    </blockquote>
+
+                                    <blockquote>https://www.codecademy.com/learn/learn-react-native</blockquote>
 
                                 </div>
 
