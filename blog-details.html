@@ -1,5 +1,5 @@
 <!doctype html>
-<html class="no-js" lang="zxx">
+<html class="no-js" lang="en">
 
 <head>
     <meta charset="utf-8">
@@ -34,15 +34,12 @@
     <!-- Modernizr JS -->
     <script src="js/vendor/modernizr-3.11.7.min.js"></script>
 
+    <!-- this causes the page to have a white strip on top and sides -->
     <style>
         body {
             font-family: Arial, sans-serif;
             line-height: 1.6;
             margin: 20px;
-        }
-
-        h2 {
-            color: #333;
         }
 
         ul {
@@ -51,6 +48,34 @@
 
         li {
             margin-bottom: 10px;
+        }
+
+
+        .blog-detials-pra-title::after {
+            content: '';
+            display: block;
+            height: 2px;
+            background: linear-gradient(to right, transparent, black, transparent);
+            width: 100%;
+        }
+
+        .blog-detials-pra-title {
+            margin-bottom: 1.4em;
+            margin-top: 0.6em;
+            font-weight: 400;
+        }
+
+        h1 {
+            font-size: 3em;
+            font-weight: 100;
+        }
+
+        p {
+            font-size: large;
+        }
+
+        .blog-details-wrap {
+            background-color: #eeeeee;
         }
     </style>
 </head>
@@ -136,7 +161,7 @@
         </div>
         <!-- End Bradcaump area -->
         <!-- Start Our Blog Area -->
-        <section class="blog-details-wrap ptb--120 bg__white">
+        <section class="blog-details-wrap ptb--120">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-8 col-xl-8 col-md-12 col-12">
@@ -161,33 +186,35 @@
 
                                 <div class="blog-contents-title" style="text-align: center;font-size: xx-large;">
                                     Contents</div>
-                                <div class="blog-contents" style="display: flex; justify-content: space-evenly;">
-                                    <button class="blog-content-item">
-                                        Introduction
-                                    </button>
-                                    <button class="blog-content-item">
-                                        <a href="#week-1">Week 1</a>
-                                    </button>
-                                    <button class="blog-content-item">
-                                        Week 2
-                                    </button>
-                                    <button class="blog-content-item">
-                                        Week 3
-                                    </button>
-                                    <button class="blog-content-item">
-                                        Week 4
-                                    </button>
-                                    <button class="blog-content-item">
-                                        Week 5
-                                    </button>
+                                <div class="blog-contents"
+                                    style="display: flex; justify-content: space-evenly; margin-top: 2em;">
+                                    <h5><a href="#introduction">Introduction</a></h5>
+                                    <h5><a href="#week-1">Week 1</a></h5>
+                                    <h5><a href="#week-2">Week 2</a></h5>
+                                    <h5><a href="#week-3">Week 3</a></h5>
+                                    <h5><a href="#week-4">Week 4</a></h5>
+                                    <h5><a href="#week-5">Week 5</a></h5>
                                 </div>
 
+
                                 <div class="blog-details-pra" style="margin-top: 3em; font-size: xx-large;">
-                                    <div class="blog-detials-pra-title" id="week-1" style="margin-bottom: 1em;">Week 1
+                                    <div class="blog-detials-pra-title" id="week-1">Introduction</div>
+
+                                    <p> Hello. My name is Artem and I'm developing a blockchain-based app designed to
+                                        transform how we interact with
+                                        music. Focusing on independent and underrepresented artists, this platform uses
+                                        Non-Fungible Tokens (NFTs) to directly connect musicians with their audience,
+                                        ensuring fair compensation and copyright integrity. Unlike mainstream services,
+                                        my project emphasizes niche genres and aims to introduce listeners to a wider
+                                        diversity of sounds. By integrating blockchain technology, I'm not just building
+                                        an app but pioneering a more equitable and transparent music industry. This
+                                        journey is about creating a new space where music and technology meet to empower
+                                        both creators and fans.</p>
+
+                                    <div class="blog-detials-pra-title" id="week-1">Week 1:
                                         Choosing a technology Stack.</div>
 
                                     <div>
-                                        <h2>The Foundation: Choosing A Tech Stack</h2>
                                         <p>In the first week of my journey to build a blockchain-based music platform,
                                             I've been diving deep into the critical task of choosing the right
                                             technology stack. It's a decision that feels as foundational as laying down
@@ -196,7 +223,8 @@
                                     </div>
 
                                     <div>
-                                        Frontend Decisions
+                                        <h1>Frontend Decisions</h1>
+
                                         <p>I've already settled on React JS for the web interface as I have experience
                                             using it. Its component-based nature is a perfect fit for the dynamic and
                                             engaging UI I envision. React's vast ecosystem and community support mean
@@ -204,7 +232,7 @@
                                     </div>
 
                                     <div>
-                                        Mobile App Development Decision
+                                        <h1>Mobile App Development</h1>
                                         <p>Choosing the right framework for the mobile app was a challenging decision –
                                             <strong>Flutter or React Native? Why
                                                 React Native?</strong>
@@ -234,7 +262,8 @@
 
                                     <p>After deciding that I will use React Native. I completed a Codecademy Course.</p>
 
-                                    <div>Building the Backend
+                                    <div>
+                                        <h1>Building the Backend</h1>
 
                                         <p>The backend part of the project is what I consider to be the most
                                             challenging. It will be responsible for complicated tasks such as NFT
@@ -281,9 +310,10 @@
                                     </div>
 
 
-                                    <div> Database Design
+                                    <div>
+                                        <h1>Database Design</h1>
 
-                                        <h2>User Database</h2>
+                                        <h2 style="padding-top: 0px;">User Database</h2>
                                         <p><strong>Purpose:</strong> Stores all user-related data, including
                                             authentication details, user profiles, preferences,
                                             and activity logs.</p>
@@ -352,6 +382,153 @@
                                     </blockquote>
 
                                     <blockquote>https://www.codecademy.com/learn/learn-react-native</blockquote>
+
+                                    <div class="blog-detials-pra-title" id="week-2">Week 2:
+                                        The Prototype</div>
+
+                                    <div>
+                                        <p>
+                                            In the second week of my project. I have decided to developed a functional
+                                            prototype.
+                                            I decided to do it as a proof of concept, to make sure that this project
+                                            would be feasible. Given the limited
+                                            time I have to make the project I wanted to understand the technical
+                                            challenges and potential limitations as soon as possible, so that i have
+                                            enough time to adapt and overcome them.
+
+                                            By developing the prototype I am laying the groundwork for my application.
+                                        </p>
+                                    </div>
+
+                                    <div>
+                                        <h1>Errors</h1>
+                                        <p>
+                                            In the process of developing my project, I encountered a significant
+                                            challenge related to package compatibility. As I integrated various
+                                            functionalities into the main codebase, I discovered that certain packages,
+                                            which performed flawlessly in isolation, were not compatible with others.
+                                            This necessitated a thorough review of documentation and extensive research
+                                            online to identify which packages could work together. During the research,
+                                            I identified that I was using an outdated version of Wagmi (a package
+                                            used to interact with the crypto wallet), which
+                                            added to the complexity of the situation. This experience underscored the
+                                            importance of carefully selecting and updating packages to ensure smooth
+                                            integration and optimal functionality in a project.
+                                            <img src="./images/images/prototype-package-json.JPG" alt="">
+
+
+
+                                            <br>
+                                            <br>
+                                            <br>
+                                            <br>
+
+                                            Another significant error I encountered in my project involved NFT creation.
+                                            Despite successfully uploading the metadata to Etherscan, I faced an issue:
+                                            the image and sound associated with the NFT failed to
+                                            appear on the OpenSea testnet. This problem occurred while I was using the
+                                            Sepolia test network, even thought the metadata of the NFT was correct and
+                                            accessible (checked on etherscan), as well as the smart contract the image
+                                            and audio still didn't show.
+                                            <img src="./images/images/Nft_metadata.jpeg" alt="">
+                                            After research I have found the possible problems that can be causing this
+                                            behavior.The indexing of the NFT can take some time (not more than 24 hrs).
+                                            Test networks don't support image and audio NFTs.
+                                            After 24 hours the nft did not appear, so I decided to switch to a Polygon
+                                            main network. The difference between main networks and text networks, is
+                                            that test networks are free and you can get the cryptocurrency needed to use
+                                            smart contracts, NFTs and all the other blockchain features from faucets,
+                                            which is free. The Polygon network is not free, but very cheap.
+                                            <img src="./images/images/reddit_polygon.PNG" alt="">
+                                            The experiment was successful. Both the image and the audio file appeared on
+                                            the blockchain almost instantly.
+                                            <img src="./images/images/2generatedNFT.PNG" alt="">
+                                            In the final prototype the user has the ability to select which audio clip
+                                            the NFT will hold. The user has to upload the audio clip first to me able to
+                                            select it. This imitates, the process of uploading and creating NFTs by the
+                                            artist. Currently I am using json file to store the NFT metadata, but in the
+                                            application I wil use the IPFS (InterPlanetary File System) for
+                                            decentralized file
+                                            storage,to make sure that the file is accessible.
+                                            <br>
+                                            <br>
+                                            <br>
+                                            <br>
+                                            !!! Interesting finding. The NFT doesnt store the metadata (including the
+                                            image) on the blockchain it stores it in a remote location as a json file,
+                                            which provides the links to the image, audio, animation and everything else
+                                            that an NFT might have. So essential if that location because unaccessible
+                                            for what ever reason, the NFT will not be ble to point to the image that it
+                                            represent, in some cases that might mean that the NFT becomes worthless.
+                                            <br>
+                                            <br>
+                                            <br>
+                                            <br>
+                                            Solidity, smart contracts and the future of the internet.
+                                            Solidity is the programming language that is used to write smart contracts.
+                                            A smart contract is like a set of rules written in computer code that
+                                            automatically carries out an agreement between people. Imagine it as a
+                                            vending machine: When you put the right amount of money in and select your
+                                            snack, the machine automatically gives you the snack without needing anyone
+                                            else to make sure the deal goes through.
+                                            <br>
+                                            <a href="https://www.youtube.com/watch?v=pyaIppMhuic">This video explains it
+                                                very well.</a>
+                                            <br>
+                                            Currently I am using a very simple contract that is able to mint an NFT. I
+                                            will need to create a smart contract that is able to create NFTs, transfer
+                                            them from one wallet to another, and delete the NFT if the user decides
+                                            that they don't want the NFT anymore.
+                                            <br>
+                                            <br>
+                                            <br>
+                                            <br>
+                                            !!! Interesting finding. There ins't an way to delete an NFT once it is on
+                                            the blockchain. The only way to delete or burn it is to send it to
+                                            non-existent crypto wallet condemning the NFT to an eternal being
+                                            somewhere in the depths of the blockchain. The blockchain reminds me of
+                                            space in some ways and perhaps the only way to retrieve a burnt NFT is to
+                                            create a wallet with the same address as the non-existent address that it
+                                            was sent to, hence becoming an existent address. But due to cryptographic
+                                            principles that are used to create a wallet the chances of that happening
+                                            are astronomically low but not zero.
+                                            <br>
+                                            <br>
+                                            <br>
+                                            <br>
+                                            <br>
+                                            WEB 3.0
+                                            <br>
+                                            Web3.0 is the next phase of the internet, where websites and apps will be
+                                            able to process information in a smart, human-like way through technologies
+                                            like artificial intelligence (AI) and blockchain. This means the web will
+                                            not just be a place to look up information, but also understand and interact
+                                            with it in more complex ways. For example, Web3.0 could enable secure,
+                                            direct, peer-to-peer transactions and agreements via blockchain and smart
+                                            contracts, making the internet more decentralized and giving users more
+                                            control over their data and online interactions. Essentially, Web3.0 aims to
+                                            create a more personalized, secure, and intelligent internet.
+                                            <br>
+                                            <a href="https://university.alchemy.com/">A great recourse on WEB 3.0</a>
+                                            <br>
+                                            <a href="https://www.web3.university/">Another great
+                                                recourse
+                                                on WEB 3.0</a>
+                                            <br>
+                                            <a href="https://web3.career/">The last great
+                                                recourse
+                                                on WEB 3.0</a>
+                                            <br>
+                                            THE FINAL PROTOTYPE.
+
+                                        </p>
+                                    </div>
+
+
+                                    <p><strong>Weekly Focus:</strong> This week has been practical - programming the
+                                        prototype was challenging and interesting. I enjoyed interacting with the
+                                        blockchain and learning
+                                        new technologies.</p>
 
                                 </div>
 
